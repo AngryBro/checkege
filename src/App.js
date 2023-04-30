@@ -1,6 +1,5 @@
 import { useEffect, useState} from 'react';
 import Main from './Main';
-import './index.css';
 
 function App() {
 
@@ -64,11 +63,30 @@ function App() {
     document.title = page;
   }, [page]);
 
+  useEffect(() => {
+    var fetchData = async (url) => {
+      var promise;
+      var response = {};
+      try {
+        promise = await fetch(url);
+        if(!promise.ok) {
+          return console.log(promise.status);
+        }
+        response = await promise.json();
+      }
+      catch(e) {
+        console.log(e);
+      }
+      setData(response);
+    }
+    fetchData("https://raw.githubusercontent.com/AngryBro/checkege/master/data/data.json");
+  }, []);
+
 
 
   return (
     <div>
-      <Main page={p(indexPageName)} />
+      <Main page={p(indexPageName)} data={data} />
     </div>
   );
 }
