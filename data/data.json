@@ -1,0 +1,7 @@
+{
+    "exams":[
+        {"date":"27.03.2023","subject":"math","result":100,"status":true},
+        {"date":"06.04.2023","subject":"inf","result":98,"status":true},
+        {"date":"30.06.2023","subject":"phys","result":null,"status":false}
+    ]
+}
