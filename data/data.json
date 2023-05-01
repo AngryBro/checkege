@@ -1,8 +1,8 @@
 {
     "exams":[
         {"date":"27.03.2023","subject":"math","result":100,"status":true,"blanks":"https://drive.google.com/file/d/1-OR6cH_keYNGZ79FLHqtDbC9yOhcsSBf/view"},
-        {"date":"06.04.2023","subject":"inf","result":98,"status":true},
-        {"date":"30.06.2023","subject":"phys","result":null,"status":false},
+        {"date":"06.04.2023","subject":"inf","result":98,"status":true,"blanks":"/404"},
+        {"date":"30.06.2023","subject":"phys","result":null,"status":false,"blanks":null},
         {"date":"28.03.2022","subject":"math","result":94,"status":true,"blanks":"https://drive.google.com/file/d/1YbHwaoa7n-DTjUtfazHVsUwgiH9hxEC_/view"},
         {"date":"04.04.2022","subject":"inf","result":95,"status":true,"blanks":"/404"},
         {"date":"07.06.2021","subject":"math","result":100,"status":true,"blanks":"https://drive.google.com/file/d/1byG8faDB6JfvENWG_5FDn-6qTvTy3G71/view"},
