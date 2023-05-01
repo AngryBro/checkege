@@ -4,7 +4,8 @@ const Main = ({page, data}) => {
     const subjects = {
         'math': 'Математика профильная',
         'inf': 'Информатика и ИКТ (КЕГЭ)',
-        'phys': 'Физика'
+        'phys': 'Физика',
+        'rus': 'Русский язык'
     };
 
     return page(
@@ -47,7 +48,7 @@ const Main = ({page, data}) => {
                         exams.map((exam, i) =>
                             <tr className={i%2?"even":"odd"} key={i}>
                                 <td>{exam.date}</td>
-                                <td>{exam.status?<a href="/exam">{subjects[exam.subject]}</a>:subjects[exam.subject]}</td>
+                                <td>{exam.status?<a onClick={page.window(exam.blanks)} href={exam.blanks}>{subjects[exam.subject]}</a>:subjects[exam.subject]}</td>
                                 <td><span className="bold green">{exam.result}</span></td>
                                 <td>{exam.status?"Оценённый результат":"Нет результата"}</td>
                                 <td>нет</td>

@@ -4,10 +4,11 @@
         {"date":"06.04.2023","subject":"inf","result":98,"status":true},
         {"date":"30.06.2023","subject":"phys","result":null,"status":false},
         {"date":"28.03.2022","subject":"math","result":94,"status":true,"blanks":"https://drive.google.com/file/d/1YbHwaoa7n-DTjUtfazHVsUwgiH9hxEC_/view"},
+        {"date":"04.04.2022","subject":"inf","result":95,"status":true,"blanks":"/"},
         {"date":"07.06.2021","subject":"math","result":100,"status":true,"blanks":"https://drive.google.com/file/d/1byG8faDB6JfvENWG_5FDn-6qTvTy3G71/view"},
         {"date":"10.07.2020","subject":"math","result":98,"status":true,"blanks":"https://drive.google.com/file/d/1HYQ8EkPIBXXiqG7E-EKe2EYZ5yAyL6BG/view"},
         {"date":"29.05.2019","subject":"math","result":100,"status":true,"blanks":"https://drive.google.com/file/d/19XBMqZ18L80GI1WXwrRr_Uv87FafDI26/view"},
-        {"date":"13.06.2019","subject":"math","result":91,"status":true,"blanks":"/"},
+        {"date":"13.06.2019","subject":"inf","result":91,"status":true,"blanks":"/"},
         {"date":"05.06.2019","subject":"phys","result":96,"status":true,"blanks":"/"},
         {"date":"03.06.2019","subject":"rus","result":73,"status":true,"blanks":"/"}
     ]
