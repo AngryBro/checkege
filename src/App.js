@@ -22,7 +22,7 @@ function App() {
     var pageRouter = (div) => page===pageName?div:<></>;
     pageRouter.window = url => (e) => {
       e.preventDefault();
-      window.open(url.indexOf('://')!==-1?url:document.location.href.split(page_url_param)[0]+page_url_param+url);
+      window.open(url.indexOf('://')!==-1?url:document.location.href.split(page_url_param)[0]+page_url_param+url.replace('/',''));
     }
     pageRouter.location = url => e => {
       e.preventDefault();
