@@ -1,5 +1,6 @@
 const Main = ({page, data}) => {
 
+    //console.log(data);
     const exams = data.exams===undefined?[]:data.exams;
     const subjects = {
         'math': 'Математика профильная',
@@ -14,7 +15,7 @@ const Main = ({page, data}) => {
 <header>
     <div className="header_bar"></div>
     <div className="header_content">
-        <div className="header_logo"></div>
+        <div onClick={page.window('https://checkege.rustest.ru')} className="header_logo"></div>
         <div className="header_text">
             <div className="header_text-1">Официальный информационный портал</div>
             <div className="header_text-2">Единого государственного экзамена</div>	
