@@ -1,6 +1,5 @@
 const Main = ({page, data}) => {
 
-    console.log(data);
     const exams = data.exams===undefined?[]:data.exams;
     const subjects = {
         'math': 'Математика профильная',
@@ -25,12 +24,12 @@ const Main = ({page, data}) => {
         <div id="rcoi-msg"></div>
         <div className="account-block">
             <span id="username">Петров А.А.</span>
-            <a href="" onClick={e => e.preventDefault()} id="logout">Выход</a>
+            <a style={{marginLeft:'5px'}} href="/conspects/math" onClick={page.location('/conspects/math')} id="logout">Выход</a>
         </div>
         <h3>Ваши результаты ЕГЭ</h3>
         
         <div className="mb-20">
-            <a href="" onClick={page.window("https://obrnadzor.gov.ru/gia/gia-11/raspisanie-gia-11/")}>График публикации результатов экзаменов</a>
+            <a href="https://obrnadzor.gov.ru/gia/gia-11/raspisanie-gia-11/" onClick={page.window("https://obrnadzor.gov.ru/gia/gia-11/raspisanie-gia-11/")}>График публикации результатов экзаменов</a>
         </div>
         <div id="table-container" className="table-container">
             <table className="table mb-20">
@@ -48,7 +47,7 @@ const Main = ({page, data}) => {
                         exams.map((exam, i) =>
                             <tr className={i%2?"even":"odd"} key={i}>
                                 <td>{exam.date}</td>
-                                <td>{exam.status?<a href="">{subjects[exam.subject]}</a>:subjects[exam.subject]}</td>
+                                <td>{exam.status?<a href="/exam">{subjects[exam.subject]}</a>:subjects[exam.subject]}</td>
                                 <td><span className="bold green">{exam.result}</span></td>
                                 <td>{exam.status?"Оценённый результат":"Нет результата"}</td>
                                 <td>нет</td>
@@ -76,7 +75,7 @@ const Main = ({page, data}) => {
         Страница является копией страницы федеральной службы по надзору в сфере образования и науки
     </div>
     <div>
-        При использовании материалов портала ЕГЭ на внешних Интернет-ресурсах ссылка на <a href="http://obrnadzor.gov.ru/" target="_blank">первоисточник</a> обязательна
+        При использовании материалов портала ЕГЭ на внешних Интернет-ресурсах ссылка на <a href="http://obrnadzor.gov.ru/" onClick={page.window("http://obrnadzor.gov.ru/")}>первоисточник</a> обязательна
     </div>
 </footer>
 </div>

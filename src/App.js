@@ -23,6 +23,10 @@ function App() {
       e.preventDefault();
       window.open(url.indexOf('://')!==-1?url:document.location.href.split(page_url_param)[0]+page_url_param+url);
     }
+    pageRouter.location = url => e => {
+      e.preventDefault();
+      document.location.href = url;
+    }
     pageRouter.navigate = name => e => {
       e.preventDefault();
       if(e.ctrlKey) {
@@ -85,7 +89,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='root'>
       <Main page={p(indexPageName)} data={data} />
     </div>
   );
