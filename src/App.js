@@ -1,5 +1,6 @@
 import { useEffect, useState} from 'react';
 import Main from './Main';
+import Page404 from './Page404';
 
 function App() {
 
@@ -91,6 +92,7 @@ function App() {
   return (
     <div className='root'>
       <Main page={p(indexPageName)} data={data} />
+      <Page404 page={p('404')} />
     </div>
   );
 }

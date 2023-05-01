@@ -1,3 +1,17 @@
+.main-menu {
+    background-color: #8c71fe;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.main-menu:hover {
+    background-color: #7f63ff;
+}
+
 .root {
 	height: 100%;
 }
